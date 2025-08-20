@@ -211,7 +211,7 @@ export class ReadFileTool extends BaseDeclarativeTool<
     }
 
     const workspaceContext = this.config.getWorkspaceContext();
-    const projectTempDir = this.config.getProjectTempDir();
+    const projectTempDir = this.config.storage.getProjectTempDir();
 
     if (
       !workspaceContext.isPathWithinWorkspace(filePath) &&
